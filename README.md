@@ -1,5 +1,7 @@
 # React_With_Alt
 
+[![Windows Build status](https://ci.appveyor.com/api/projects/status/oglr6gark7btawu2?svg=true)](https://ci.appveyor.com/project/et1975/fable-aether)
+
 1. Clone this repository https://github.com/akashishu777/React_With_Alt.git
 
 2. cd React_With_Alt
