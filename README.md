@@ -2,6 +2,8 @@
 
 [![Windows Build status](https://ci.appveyor.com/api/projects/status/oglr6gark7btawu2?svg=true)](https://ci.appveyor.com/project/akashishu777/react-with-alt)
 
+[![Build Status](https://ci.appveyor.com/{akashishu777}/{react-with-alt}.png?branch=master)](https://ci.appveyor.com/project/akashishu777/react-with-alt)
+
 1. Clone this repository https://github.com/akashishu777/React_With_Alt.git
 
 2. cd React_With_Alt
