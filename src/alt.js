@@ -1,4 +1,4 @@
-var Alt = require('alt');
+var Alt = require('al');
 var alt = new Alt();
 import chromeDebug from 'alt-utils/lib/chromeDebug';
 chromeDebug(alt);
