@@ -2,13 +2,12 @@ import React, { Component } from 'react';
 import AltContainer from 'alt-container';
 import _ from  'lodash';
 import InstrumentStore from '../stores/InstrumentStore';
-import InstrumentAction from '../actions/InstrumentAction';
-
 
 class App extends Component {
 
 componentDidMount(){
     InstrumentStore.fetchInstuments();
+    console.log('Step 1: Calling Alt Source Method fetchInstuments() from the component');
 }
 
   render() {
@@ -27,7 +26,7 @@ class Instrumentss extends Component{
 
     render(){
        var data = this.props;
-       console.log(data.Instrument);
+      //  console.log(data.Instrument);
        return (
         <ul>
             {data.Instrument.map(function(data, index){

@@ -7,10 +7,10 @@ class InstrumentStore {
     constructor(){
         this.Instrument = [];
         this.errorMessage = null;
-        console.log(InstrumentAction);
+        // console.log(InstrumentAction);
         this.bindListeners({
             handleFetchInstrument : InstrumentAction.FETCH_INSTRUMENT,
-            handleUpdateInstruments : InstrumentAction.UPDATE_INSTRUMENTS       
+            handleUpdateInstruments : InstrumentAction.UPDATE_INSTRUMENTS,
         });
         
         this.exportAsync(InstrumentSource);
@@ -18,13 +18,13 @@ class InstrumentStore {
 
     handleFetchInstrument(){
         this.Instrument = [];
-        console.log('i am fetch');
+        console.log('i am fetching instrument');
     }
     
     handleUpdateInstruments(Instrument) {
         this.Instrument = Instrument;
         this.errorMessage = null;
-        console.log('i am update insnt');
+        console.log('Step 4: Now the store is updated with the data you have passed from the source');
       }
     
 }
