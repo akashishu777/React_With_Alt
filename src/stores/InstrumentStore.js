@@ -24,7 +24,7 @@ class InstrumentStore {
     handleUpdateInstruments(Instrument) {
         this.Instrument = Instrument;
         this.errorMessage = null;
-        console.log('Step 4: Now the store is updated with the data you have passed from the source');
+        console.log('Step 4: (Store) Now the store is updated with the data you have passed from the source');
       }
     
 }

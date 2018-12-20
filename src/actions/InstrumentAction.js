@@ -7,7 +7,7 @@ class InstrumentAction{
     }
 
     updateInstruments(Instrument) {
-        console.log('Step 3: I am dispatiching data to the store updateInstruments');
+        console.log('Step 3: (Action) I am dispatiching data to the store updateInstruments');
         return Instrument;
     }
 }

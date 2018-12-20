@@ -7,7 +7,7 @@ class App extends Component {
 
 componentDidMount(){
     InstrumentStore.fetchInstuments();
-    console.log('Step 1: Calling Alt Source Method fetchInstuments() from the component');
+    console.log('Step 1: (Component) Calling Alt Source Method fetchInstuments() from the component');
 }
 
   render() {
@@ -36,6 +36,6 @@ class Instrumentss extends Component{
     )
     }
 
-}
+} 
 
 module.exports = App;

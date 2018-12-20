@@ -16,7 +16,7 @@ var InstrumentSource = {
                         setTimeout(function () {
                             if(true){
                                 resolve(JSON_Data);
-                                console.log('Step 2: I got the data, now i am sending this data to Alt Action through success: updateInstruments');
+                                console.log('Step 2: (Source) I got the data, now i am sending this data to Alt Action through success: updateInstruments');
                             }
                             else{
                                 reject('Err no data found');
