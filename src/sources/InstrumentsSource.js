@@ -5,7 +5,8 @@ var JSON_Data = [
     { id : 0 , name : 'Guitar'},
     { id : 1 , name : 'Piano'},
     { id : 2 , name : 'Drum'},
-    { id : 2 , name : 'Flute'}
+    { id : 3 , name : 'Flute'},
+    { id : 4 , name : 'keyboard'}
 ];
 
 var InstrumentSource = {
