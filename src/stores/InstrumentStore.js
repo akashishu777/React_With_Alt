@@ -27,7 +27,6 @@ class InstrumentStore {
     }
     
     handleMangoCount(count) {
-        console.log('===== > handleMangoCount function called');
         this.frutes.mango = this.frutes.mango + count; 
     }
 

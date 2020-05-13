@@ -44,14 +44,13 @@ class Instrumentss extends Component{
          <div>
          <h4>Mango Count:  {this.props.mango}</h4>
 
-         <AltContainer 
-         store={InstrumentStore}
-         inject={{
-          apple: () => InstrumentStore.getState().frutes.apple
-         }}
-         >
-         <MangoCount />
-     </AltContainer>
+        <AltContainer 
+          store={InstrumentStore}
+          inject={{
+            apple: () => InstrumentStore.getState().frutes.apple
+          }}>
+          <MangoCount />
+        </AltContainer>
 
 
          <input onClick={this.handleMangoCount} type="button" value={'Increate Mango Count'}></input>

@@ -5,13 +5,8 @@ import InstrumentStore from '../stores/InstrumentStore';
 import InstrumentAction from '../actions/InstrumentAction';
 
 class MangoCount extends Component {
-
-    handleMangoCount() { 
-        InstrumentAction.mangoCount(1);
-      }
-    
         render() {
-            console.log('Mango Component Rendering');
+            console.log('Apple Component Rendering');
            return (
              <div>
              <h3>Apple Count:  {this.props.apple}</h3>

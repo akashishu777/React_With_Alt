@@ -12,7 +12,6 @@ class InstrumentAction{
     }
 
     mangoCount(count) {
-        console.log('mango count action');
         return count;
     }
 }
