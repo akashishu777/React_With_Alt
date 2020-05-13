@@ -7,10 +7,15 @@ class InstrumentStore {
     constructor(){
         this.Instrument = [];
         this.errorMessage = null;
-        // console.log(InstrumentAction);
+        this.frutes = {
+            mango: 1,
+            apple: 1
+        }
+         console.log(InstrumentAction);
         this.bindListeners({
             handleFetchInstrument : InstrumentAction.FETCH_INSTRUMENT,
             handleUpdateInstruments : InstrumentAction.UPDATE_INSTRUMENTS,
+            handleMangoCount : InstrumentAction.MANGO_COUNT
         });
         
         this.exportAsync(InstrumentSource);
@@ -21,6 +26,11 @@ class InstrumentStore {
         console.log('i am fetching instrument');
     }
     
+    handleMangoCount(count) {
+        console.log('===== > handleMangoCount function called');
+        this.frutes.mango = this.frutes.mango + count; 
+    }
+
     handleUpdateInstruments(Instrument) {
         this.Instrument = Instrument;
         this.errorMessage = null;
