@@ -14,8 +14,13 @@ componentDidMount(){
     return (
       <div>
         <h1>Instrumnet Names</h1>
-        <AltContainer store={InstrumentStore}>
-            <Instrumentss />
+        <AltContainer 
+            store={InstrumentStore}
+            inject={{
+              Instrument: () => InstrumentStore.getState().Instrument
+            }}
+            component={Instrumentss}
+            >
         </AltContainer>
       </div>
     );
@@ -26,7 +31,7 @@ class Instrumentss extends Component{
 
     render(){
        var data = this.props;
-      //  console.log(data.Instrument);
+      console.log(this.props.Instrument);
        return (
         <ul>
             {data.Instrument.map(function(data, index){
